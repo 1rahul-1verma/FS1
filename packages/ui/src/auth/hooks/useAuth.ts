@@ -27,7 +27,7 @@ export const useAuth = ({
 
   const handleSubmit = useCallback(() => {
     onSubmit({ email, password });
-  }, []);
+  }, [email, password]);
 
   return {
     email,

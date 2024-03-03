@@ -71,14 +71,14 @@ export const Auth = ({
               >
                 {TYPE_VS_BUTTON_LABEL[type]}
               </button>
-              <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+              <p
+                className="text-sm font-light text-gray-500 dark:text-gray-400"
+                onClick={onRedirect}
+              >
                 {TYPE_VS_REDIRECT_DESC[type]}
-                <a
-                  href="#"
-                  className="font-medium text-indigo-600 hover:underline dark:text-indigo-500 ml-1"
-                >
+                <span className="font-medium text-indigo-600 hover:underline dark:text-indigo-500 ml-1">
                   {TYPE_VS_REDIRECT_BUTTON_LABEL[type]}
-                </a>
+                </span>
               </p>
             </form>
           </div>
